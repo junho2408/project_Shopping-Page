@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Main </title>
+    </head>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        #txt_introduce{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .card_align{
+            display: flex;
+            justify-content: center;
+        }
+
+        .card{
+            text-align: center;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .card_title{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .card_button{
+            font-size: 25px;
+            width: 150px;
+            height: 30px;
+        }
+
+        .card_img {
+            width: 300px;
+            height: 200px;
+        }
+    </style>
+    <body>
+        <h1>Game market</h1>
+        
+        <div id="txt_introduce">
+            Welcome to game of this year market!!<br>
+            Enjoy your shopping.
+            <br>
+            <br>
+            <a href="orderlist.html"> order list </a>
+        </div>
+        <div class="card_align">
+            <div class="card">
+                <img class="card_img" src="./img/diablo_4.jpg">
+                <p class="card_title"> Diablo 4 </p>
+                <input class="card_button" type="button" value="order" onclick="alert('diablo_4');">
+            </div><br>
+            <div class="card">
+                <img class="card_img" src="./img/elden_ring.jpg">
+                <p class="card_title"> Elden ring </p>
+                <input class="card_button" type="button" value="order" onclick="alert('elden_ring');">
+            </div><br>
+            <div class="card">
+                <img class="card_img" src="./img/once_human.jpg">
+                <p class="card_title"> Once human </p>
+                <input class="card_button" type="button" value="order" onclick="alert('once_human');">
+            </div><br>
+        </div>
+    </body>
+</html>

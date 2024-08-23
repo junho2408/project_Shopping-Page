@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head> <!--html문서 구조는 크게 head와 body로 나뉜다.-->
+        <meta charset="UTF-8"> <!--문서의 정보를 제시해준다. -->
+        <title> USER LOGIN </title> <!--웹 브라우저에서 상단의 탭 이름 부분을 출력한다.-->
+        <style>
+            h1 {    /*1번 방법, 특정 태그를 지정해서 스타일 설정*/
+                color:darkred;
+                text-align: center;
+            }
+            .login_inputs{  /*2번 방법, 클래스를 지정해서 스타일 설정, 클래스 표현시 앞에 "."을 붙여서 표기한다.*/
+                font-size: 25px;
+            }
+            #btn_login {    /*3번 방법, ID를 지정해서 스타일 설정, ID 표현시 앞에 "#"을 붙여서 표기한다.*/
+                font-size: 20px;
+                width: 100px;
+                height: 30;
+            }
+        </style>
+    </head>
+    <body> <!--웹 페이지의 본문에 해당하는 부분이다.-->
+        <a href="main.html">Programmers</a> <!--Anchor의 약자로 원하는 링크를 걸어 페이지를 이동할 수 있도록 한다.-->
+        <h1>User Login</h1>
+        <form style="text-align: center;"> 
+            User ID : <input class="Login_inputs" type="text"><br> <!--유저의 입력을 받는다.-->
+            User PW : <input class="Login_inputs" type="password"><br>
+            <input id="btn_login" type="button" value="Login"> <!--버튼의 형식으로도 입력을 받을 수 있다.-->
+        </form>
+    </body>
+</html>
