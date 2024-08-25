@@ -18,42 +18,35 @@
                 text-align: center;
                 margin-bottom: 50px;
             }
+
+            .main_button{
+                font-size: 25px;
+                width: 200px;
+                height: 30px;
+            }
+
+            .empty_button{
+                color: blue;
+                text-decoration: underline;
+                cursor: pointer;
+                text-align: center;
+            }
+
         </style>
     </head>
     <body>
         <h1>Order list</h1>
         <div>
-            <a href="main.html"> back to main </a>
+            <input class="main_button" type="button" value="Back To Main" onclick="location.href='/'">
         </div>
-
-        <table style="border: 1px solid black; width: 30%; height: 20%;" >
+        <p class="empty_button" onclick="location.href='/orderlist/empty'"> Empty orderlist</p>
+        
+        <table style="border: 1px solid black; width: 30%; height: 20%;">
             <th> No </th>
             <th> Product </th>
             <th> Description </th>
             <th> Price </th>
             <th> Order Date </th>
-
-            <tr>
-                <td>1</td>
-                <td>product1</td>
-                <td>description1</td>
-                <td>price1</td>
-                <td>date1</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>product2</td>
-                <td>description2</td>
-                <td>price2</td>
-                <td>date2</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>product3</td>
-                <td>description3</td>
-                <td>price3</td>
-                <td>date3</td>
-            </tr>
-        </table>
+            
     </body>
 </html>
